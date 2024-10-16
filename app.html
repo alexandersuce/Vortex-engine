@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex Craft - Interface de Création</title>
+    <link rel="stylesheet" href="styles-app.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="draw-btn">Dessiner</button>
+            <button id="code-btn">Coder</button>
+            <input type="color" id="color-picker" value="#000000" style="display: none;">
+            <input type="range" id="stroke-size" min="1" max="10" value="2" style="display: none;">
+            <div class="mode-switch">
+                <button id="html-btn" class="active">HTML</button>
+                <button id="css-btn">CSS</button>
+            </div>
+        </div>
+        <div class="workspace">
+            <div class="scene" id="scene">
+                <!-- La scène 2D/3D sera affichée ici -->
+            </div>
+            <textarea id="code" placeholder="Code HTML ici..."></textarea>
+        </div>
+    </div>
+    <script src="script-app.js"></script>
+</body>
+</html>

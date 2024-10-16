@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.mode-switch {
+    display: flex;
+}
+
+.active {
+    background-color: #777;
+}
+
+.workspace {
+    display: flex;
+    flex: 1;
+}
+
+.scene {
+    flex: 1;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+
+textarea {
+    width: 300px;
+    border: 1px solid #ccc;
+    resize: none;
+    padding: 10px;
+}
+
+#draw-btn.active {
+    background-color: blue; /* Change to blue when drawing */
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Prevent interaction with the canvas */
+}

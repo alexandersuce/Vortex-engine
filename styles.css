@@ -1,0 +1,156 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Background video */
+video#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Agrandi les logos */
+    margin-right: 20px;
+}
+
+.img-search {
+    height: 30px; /* Rétréci l'icône de recherche */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Taille du texte des liens */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px; /* Taille du texte du menu déroulant */
+}
+
+.dropdown header {
+    color: #ff6f61;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Header buttons */
+.header-buttons button {
+    margin-left: 15px;
+    padding: 10px 15px;
+    background: #ffffff;
+    color: #000000;
+    font-family: fantasy;
+    border: 2px solid black; /* Bordure solide noire */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-buttons button:hover {
+    background: #000000;
+    color: white;
+    border: 2px solid white; /* Bordure blanche au hover */
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.5em; /* Taille du texte pour la description */
+    margin-bottom: 20px;
+}
+
+.try-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.try-btn:hover {
+    background: #000000;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer span {
+    color: #fff;
+}
